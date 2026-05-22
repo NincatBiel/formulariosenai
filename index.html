@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<body>
+<body style="background-color: aliceblue;">
     <h2>Cadastre-se</h2>
     <form>
 
@@ -16,17 +16,43 @@
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required> <br><br>
             <!--Email-->
             <label for="email">Email:</label><br>
-            <input type="text" id="email" email="email" placeholder="name@example.com" required> <br><br>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required> <br><br>
             <!--Senha-->
-            <label for="password">Senha</label><br>
-            <input type="password" id="password" password="password" placeholder="Digite sua senha" required><br><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required><br><br>
             <!--Data de Nascimento-->
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" placeholder="xx/xx/xxxx" required> <br><br>
             <!--CPF-->
+            <label for="CPF">CPF:</label>
+            <input type="text" id="CPF" name="CPF" placeholder="xxx.xxx.xxx-xx" required> <br><br>
             <!--Telefone-->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) 9xxxx-xxxx" required><br><br>
             <!--Nome da mãe-->
+            <label for="momname">Nome da Mãe:</label>
+            <input type="text" id="momname" name="momname" placeholder="Insira o nome da sua mãe" required> <br><br>
             <!--Nome do pai-->
+            <label for="dadname">Nome do Pai (Opcional):</label>
+            <input type="text" id="dadname" name="dadname" placeholder="Insira o nome do seu pai (Opcional)"><br><br>
+        </fieldset>
+        <!--Estado Civil precisou de outro fieldset pra ficar mais organizado-->
+        <fieldset>
+            <legend>Estado Civil</legend>
             <!--Estado civil (select)-->
-            <label for=""></label>
+            <!--Solteiro-->
+            <input type="radio" id="solteiro" name="civilstate" value="Solteiro">
+            <label for="solteiro">Solteiro</label><br>
+            <!--Casado-->
+            <input type="radio" id="casado" name="civilstate" value="Casado">
+            <label for="casado">Casado</label><br>
+            <!--Viúvo(a)-->
+            <label for="viuvo">Viúvo(a)</label><br>
+            <input type="radio" id="viuvo" name="civilstate" value="Viuvo">
+        </fieldset>
+        <!---->
+        <fieldset>
+
         </fieldset>
     </form>
 </body>
