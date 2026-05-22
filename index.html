@@ -10,7 +10,7 @@
     <h2>Cadastre-se para a vaga</h2>
     <form>
 
-        <fieldset>
+        <fieldset border: none;>
             <legend>Informações pessoais</legend>
             
             <!--Nome-->
@@ -23,7 +23,7 @@
             
             <!--Senha-->
             <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" placeholder="Digite sua senha" required><br><br>
+            <input type="password" id="password" name="password" placeholder="mínimo 8 caracteres" minlength="8" required><br><br>
             
             <!--Data de Nascimento-->
             <label for="nascimento">Data de Nascimento:</label>
@@ -37,7 +37,7 @@
                 <label for="masculino">Masculino</label> <br>
                 <!--Feminino-->
                 <input type="radio" id="feminino" name="sexo" value="Feminino">
-                <label for="feminino">Feminino/label> <br>
+                <label for="feminino">Feminino</label> <br>
                 <!--Outro-->
                 <input type="radio" id="outro" name="sexo" value="Outro">
                 <label for="outro">Outro</label> <br>
@@ -90,7 +90,7 @@
 
             <!--Estado-->
             <label for="estado">Estado</label>
-            <select name="estado" id="estado">
+            <select name="estado" id="estado"> <br>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -122,11 +122,11 @@
 
             <!--Cidade-->
             <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade" required>
+            <input type="text" id="cidade" name="cidade" required> <br>
             
             <!--O resto, plmds (bairro-rua-numero)-->
             <label for="brn">Complemento</label>
-            <input type="text" id="brn" name="brn" placeholder="Bairro, Rua, número, complemento" required>
+            <input type="text" id="brn" name="brn" placeholder="Bairro, Rua, número, complemento" required> <br>
 
             <fieldset>
                 <legend>Tipo de moradia</legend>
@@ -166,7 +166,7 @@
             
             <!--JS-->
             <input type="checkbox" id="js" name="tecnologia" value="JS">
-            <label for="js">JavaScript</label>
+            <label for="js">JavaScript</label> <br>
 
             <!--Python-->
             <input type="checkbox" id="python" name="tecnologia" value="Python">
@@ -174,7 +174,7 @@
         </fieldset>
         
         <!--Área de comentários-->
-        <label for="comentarios">Comentários:</label>
+        <label for="comentarios">Comentários:</label> <br>
         <textarea name="comentarios" id="comentarios" placeholder="Escreva o que quiser, infelizmente não vou ler, mas se quiser, me manda mensagem"></textarea>
 
         <button type="submit">Enviar formulário</button>
