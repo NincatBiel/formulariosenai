@@ -51,11 +51,11 @@
 
             <!--CPF-->
             <label for="CPF">CPF:</label>
-            <input type="text" id="CPF" name="CPF" placeholder="xxx.xxx.xxx-xx" required> <br><br>
+            <input type="text" id="CPF" name="CPF" placeholder="xxx.xxx.xxx-xx" required minlength="11" maxlength="11"> <br><br>
             
             <!--Telefone-->
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(xx) 9xxxx-xxxx" required><br><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) 9xxxx-xxxx" required minlength="11" maxlength="11"><br><br>
             
             <!--Nome da mãe-->
             <label for="momname">Nome da Mãe:</label>
@@ -118,16 +118,20 @@
                 <option value="SP">São Paulo</option>
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
-            </select> <br>
+            </select> <br> <br>
 
             <!--Cidade-->
             <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade" required> <br>
+            <input type="text" id="cidade" name="cidade" required> <br> <br>
             
             <!--O resto, plmds (bairro-rua-numero)-->
             <label for="brn">Complemento</label>
             <input type="text" id="brn" name="brn" placeholder="Bairro, Rua, número, complemento" required> <br>
-
+            
+            <!--CEP-->
+            <label for="CEP">CEP:</label>
+            <input type="number" id="CEP" name="CEP" required> <br>
+            
             <fieldset>
                 <legend>Tipo de moradia</legend>
                 <!--Casa-->
@@ -136,7 +140,7 @@
 
                 <!--Prédio-->
                 <input type="radio" id="predio" name="moradia" value="Predio">
-                <label for="predio">Prédio</label>
+                <label for="predio">Prédio</label> <br>
 
                 <!--Condomínio-->
                 <input type="radio" id="condominio" name="moradia" value="Condominio">
@@ -147,9 +151,6 @@
                 <label for="pokebola">Pokébola</label> <br>
             </fieldset>
             
-            <!--CEP-->
-            <label for="CEP">CEP:</label>
-            <input type="number" id="CEP" name="CEP" required> <br>
         
         </fieldset>
 
@@ -175,7 +176,7 @@
         
         <!--Área de comentários-->
         <label for="comentarios">Comentários:</label> <br>
-        <textarea name="comentarios" id="comentarios" placeholder="Escreva o que quiser, infelizmente não vou ler, mas se quiser, me manda mensagem"></textarea> <br>
+        <textarea name="comentarios" id="comentarios" placeholder="Escreva o que quiser, infelizmente não vou ler, mas se quiser, me manda mensagem"></textarea> <br> <br>
 
         <button type="submit">Enviar formulário</button>
         <button type="reset">Limpar formulário</button>
